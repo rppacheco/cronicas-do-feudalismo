@@ -15,7 +15,7 @@ Abra `dist/index.html` no navegador. Todos os recursos necessários são locais;
 - `dist/css/estilos.css`: estilos e adaptação a telas pequenas.
 - `dist/js/conteudos.js`: oito textos, conceitos, perguntas e posições dos pontos.
 - `dist/js/app.js`: navegação, janelas acessíveis e progresso da exploração.
-- `.openai/hosting.json`: configuração da publicação.
+- `.github/workflows/pages.yml`: publicação de somente `dist/` no GitHub Pages.
 
 ## Escopo pedagógico
 Modelo ilustrativo de um senhorio rural da Europa Ocidental entre os séculos XI e XIII. Os textos foram escritos para introdução ao tema e precisam ser confrontados com o livro didático e as orientações do professor. A imagem não reconstrói um lugar real. Progresso válido durante a visita; recarregar a página o reinicia.
@@ -64,3 +64,7 @@ Dados e renderização: `dist/js/linha-do-tempo.js`, carregado antes de `ordens.
 O quarto capítulo (`#pessoas`) apresenta 12 retratos ilustrativos e biografias de Carlos Magno, Guilherme, o Conquistador, Gregório VII, Henrique IV, Leonor da Aquitânia, Hildegarda de Bingen, Dante Alighieri, Francisco de Assis, Luís IX, Tomás de Aquino, Wat Tyler e Joana d’Arc. O menu filtra por tema. Cada janela reúne data contextualizada, trajetória, relação com a sociedade medieval, pergunta e fonte, com atalhos para a linha do tempo e as ordens sociais.
 
 Dados e renderização: `dist/js/personalidades.js`, entre `linha-do-tempo.js` e `ordens.js`. As imagens e os prompts estão documentados em `ARTE-PERSONALIDADES.md`. A navegação preserva a tela cheia e a música.
+
+## Publicação no GitHub Pages
+
+Site público: https://rppacheco.github.io/cronicas-do-feudalismo/ . O repositório `rppacheco/cronicas-do-feudalismo` é público. O workflow `.github/workflows/pages.yml` publica apenas `dist/` em alterações dessa pasta na branch `main` ou por execução manual em Actions. Documentação e ferramentas não entram na página publicada. A hospedagem Sites anterior voltou a ser privada.

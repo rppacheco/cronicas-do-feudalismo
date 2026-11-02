@@ -124,11 +124,11 @@ feudo-interativo/
     └── gerar_trilha.py
 ```
 
-O repositório de desenvolvimento também contém `.openai/hosting.json`, que identifica a hospedagem existente. Esse arquivo não é necessário para a apresentação local.
+A publicação é controlada por `.github/workflows/pages.yml`, que envia apenas `dist/` ao GitHub Pages. O repositório local também mantém `.openai/hosting.json` como configuração histórica da hospedagem anterior; esse arquivo não é necessário para a apresentação local.
 
 ## Uso em sala de aula
 
-**Pela internet:** acesse [Crônicas do feudalismo](https://explore-um-feudo-rodrigo.swiftowl25.chatgpt.site). A publicação atual é privada e requer acesso pela conta autorizada do ChatGPT.
+**Pela internet:** acesse [Crônicas do feudalismo](https://rppacheco.github.io/cronicas-do-feudalismo/). O site é público e hospedado no GitHub Pages. O repositório `rppacheco/cronicas-do-feudalismo` também é público. Apenas `dist/` integra o artefato do site; documentação e ferramentas permanecem no repositório. A hospedagem Sites anterior está privada.
 
 **Por uma cópia local:** extraia o ZIP completo, entre em `feudo-interativo/dist/` e abra `index.html` no navegador. Não separe o HTML das pastas de imagens, estilos, scripts e áudio.
 

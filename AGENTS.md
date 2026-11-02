@@ -27,7 +27,8 @@ Aplicação educativa em português para um trabalho do sexto ano do ensino fund
 | `dist/js/musica.js` | Reprodução, pausa, desbloqueio de áudio e volume. |
 | `dist/assets/` | Imagens e áudio locais. |
 | `tools/gerar_trilha.py` | Geração do arranjo de Greensleeves. |
-| `.openai/hosting.json` | Identidade e configuração da hospedagem existente. |
+| `.github/workflows/pages.yml` | Publicação de somente `dist/` no GitHub Pages. |
+| `.openai/hosting.json` | Configuração histórica da hospedagem anterior, atualmente privada. |
 
 Os scripts usam funções e variáveis compartilhadas. Preserve a ordem dos scripts com `defer`: `conteudos.js`, `app.js`, `musica.js`, `linha-do-tempo.js`, `personalidades.js`, `ordens.js`. Ao reorganizar o código, confira as referências entre arquivos.
 
@@ -85,6 +86,6 @@ Para apresentação local, distribua a pasta completa ou um ZIP. `dist/` contém
 
 Se atualizar o pacote existente neste workspace, o arquivo de entrega é `../feudo-interativo.zip`, contendo a pasta `feudo-interativo/` e excluindo `.git`, `.openai` e arquivos temporários.
 
-Para alterações publicadas na aplicação, siga a habilidade Sites disponível no ambiente, reutilize a identidade de `.openai/hosting.json` e preserve o público existente. Não crie outro site. Publique a revisão verificada e informe o resultado retornado pela hospedagem. Nunca grave credenciais no repositório.
+A hospedagem principal é o GitHub Pages: https://rppacheco.github.io/cronicas-do-feudalismo/ . O repositório público é `rppacheco/cronicas-do-feudalismo`, na branch `main`. O fluxo `.github/workflows/pages.yml` publica somente `dist/`, em mudanças dessa pasta ou por execução manual. Para alterações no site, envie o código verificado ao GitHub e confira o resultado em Actions. Documentos e ferramentas ficam no repositório e não entram no artefato publicado. A hospedagem Sites anterior está privada; não a reative nem publique nela sem pedido explícito do usuário. Nunca grave credenciais no repositório.
 
 No capítulo de personalidades, preserve a seleção aprovada de 12 pessoas, incluindo Dante Alighieri. As datas podem indicar vida, reinado ou um marco: mantenha o rótulo explícito. Não confunda os retratos idealizados das ordens com pessoas históricas. Relacione cada trajetória com processos sociais e registre a fonte na biografia.
